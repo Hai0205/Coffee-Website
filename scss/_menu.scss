@@ -1,0 +1,28 @@
+.menu{
+    background: $light-bg;
+   .box-container{
+        @include gird(30rem);
+    .box{
+        text-align: center;
+        padding:30px 20px;
+        border-radius:5px;
+        transition: 0.55s;
+        &:hover{
+            background:$white;
+            box-shadow:$box-shadow;
+            transform: translateY(-20px);
+        }
+        img{
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        h3{
+            @include title-text(20px);
+        }
+        p{
+            padding: 10px 0;
+            @include graph-text(15px);
+        }
+    }
+   }
+}

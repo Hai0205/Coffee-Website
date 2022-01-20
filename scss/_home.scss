@@ -1,0 +1,23 @@
+.home{
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+     background-position: center;
+     //cố định images
+     background-attachment: fixed;
+ 
+    span{
+       font-size: 25px;
+       color:$white;
+    }
+ 
+    h3{
+       padding: 10px 0;
+       font-size: 60px;
+       color:$white;
+    }
+ 
+    .link-btn{
+       color:$white;
+       border-color: $white;
+    }
+ }

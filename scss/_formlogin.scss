@@ -1,0 +1,98 @@
+.login-form{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1100;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ 
+    &.active{
+       display: flex;
+    }
+ 
+    form{
+       width: 500px;
+       padding:40px;
+       background: $white;
+       text-align: center;
+       position: relative;
+       animation: fadeIn .2s linear;
+ 
+       #close-login-form{
+          position: absolute;
+          top:-40px; right:0;
+          font-size: 30px;
+          cursor: pointer;
+          color:$white;
+ 
+          &:hover{
+             transform: rotate(90deg);
+          }
+       }
+ 
+       .logo{
+          font-size: 25px;
+          color:$main-color;
+          font-weight: bolder;
+       }
+ 
+       h3{
+          padding:10px 0;
+          @include title-text(20px);
+          margin-top: 10px;
+       }
+ 
+       .box{
+          width: 100%;
+          padding:12px 14px;
+          border:$border;
+          font-size: 16px;
+          margin:10px 0;
+       }
+ 
+       .flex{
+          display: flex;
+          align-items: center;
+          gap:5px;
+          margin: 10px 0;
+ 
+          label{
+             @include graph-text(15px);
+             cursor: pointer;
+          }
+ 
+          a{
+             font-size: 15px;
+             color:$main-color;
+             margin-left: auto;
+ 
+             &:hover{
+                text-decoration: underline !important;
+             }
+          }
+       }
+ 
+       .link-btn{
+          width: 100%;
+          margin-bottom: 20px;
+       }
+ 
+       .account{
+          padding:15px 5px;
+          background: $light-bg;
+          @include graph-text(15px);
+ 
+          a{
+             color:$main-color;
+ 
+             &:hover{
+                text-decoration: underline !important;
+             }
+          }
+       }
+    }
+ }
